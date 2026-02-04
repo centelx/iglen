@@ -128,8 +128,8 @@ export function Contact() {
                     <div>
                       <div className="font-semibold text-primary mb-1">Godziny Otwarcia</div>
                       <div className="text-muted">
-                        Poniedziałek - Piątek: 8:00 - 17:00<br />
-                        Sobota: 8:00 - 14:00<br />
+                        Poniedziałek - Piątek: 9:00 - 17:00<br />
+                        Sobota: 9:00 - 14:00<br />
                         Niedziela: Zamknięte
                       </div>
                     </div>
