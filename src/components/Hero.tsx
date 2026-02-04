@@ -28,7 +28,7 @@ export function Hero() {
         <img
           src={
             serviceType === 'mechanics'
-              ? 'https://plus.unsplash.com/premium_photo-1682142263585-628a4561e136?auto=format&fit=crop&w=2000&q=80'
+              ? 'https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
               : 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2000&q=80'
           }
           alt={serviceType === 'mechanics' ? 'Mechanika' : 'Klimatyzacja'}
