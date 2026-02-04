@@ -69,24 +69,22 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-            Twój Samochód w Rękach<br />
-            <span
-              className={
-                serviceType === 'mechanics'
-                  ? 'text-red-500'
-                  : 'text-sky-400'
-              }
-            >
-              Fachowców
-            </span>
+            {serviceType === 'mechanics' ? (
+              <>
+                Twój Samochód w Rękach<br />
+                <span className="text-red-500">Fachowców</span>
+              </>
+            ) : (
+              <>
+                Profesjonalny Serwis<br />
+                <span className="text-sky-400">Klimatyzacji</span>
+              </>
+            )}
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-200 mb-4 max-w-3xl mx-auto leading-relaxed">
-            25 Lat Doświadczenia
-          </p>
-          <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
-            Kompleksowa mechanika pojazdowa i profesjonalny serwis klimatyzacji.
-            <br />
-            Sumienność, jakość i przystępne ceny.
+          <p className="text-xl sm:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed">
+            {serviceType === 'mechanics'
+              ? 'Kompleksowa mechanika pojazdowa. Naprawiamy to, czego inni nie potrafią. 25 lat doświadczenia.'
+              : 'Pełny serwis, odgrzybianie i naprawa układów. Zadbaj o świeże powietrze i komfort podróży.'}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
