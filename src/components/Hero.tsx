@@ -68,7 +68,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {/* ZMIANA TUTAJ: text-3xl zamiast text-4xl oraz dodane break-words */}
+          {/* Tytuł z zabezpieczeniem przed ucinaniem */}
           <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight break-words">
             {serviceType === 'mechanics' ? (
               <>
@@ -82,7 +82,9 @@ export function Hero() {
               </>
             )}
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed">
+
+          {/* POPRAWKA TUTAJ: Dodane px-4 oraz zmiana text-xl na text-lg dla mobile */}
+          <p className="text-lg sm:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed px-4">
             {serviceType === 'mechanics'
               ? 'Kompleksowa mechanika pojazdowa. Naprawiamy to, czego inni nie potrafią. 25 lat doświadczenia.'
               : 'Pełny serwis, odgrzybianie i naprawa układów. Zadbaj o świeże powietrze i komfort podróży.'}
