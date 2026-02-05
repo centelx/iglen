@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Wrench, Phone, Mail, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Wrench, Phone, Mail, MapPin, Facebook } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,18 +23,13 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/iglen.mechanika.pojazdowa.detailing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-accent rounded-lg flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-accent rounded-lg flex items-center justify-center transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
