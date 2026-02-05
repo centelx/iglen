@@ -68,7 +68,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          {/* ZMIANA TUTAJ: text-3xl zamiast text-4xl oraz dodane break-words */}
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight break-words">
             {serviceType === 'mechanics' ? (
               <>
                 Twój Samochód w Rękach<br />
